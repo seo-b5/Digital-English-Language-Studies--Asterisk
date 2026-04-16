@@ -5,175 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicting the Future of Latin and Greek Plurals</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #ecf0f1;
-            --text-color: #333;
-            --accent-color: #3498db;
-            --border-color: #ddd;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-
-        h1 { color: var(--primary-color); font-size: 2.2em; margin-bottom: 10px; }
-        h2 { color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 15px; margin-top: 40px; }
-        h3 { color: #444; margin-top: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
-        h4 { color: var(--accent-color); margin-bottom: 10px; }
-
-        .team-members { font-style: italic; color: #666; margin-bottom: 30px; }
-        
-        .content-section { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
-
-        .analysis-block { margin-bottom: 40px; padding: 20px; border: 1px solid var(--border-color); border-radius: 5px; }
-
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto; }
-        .image-caption { font-size: 0.9em; color: #777; margin-top: 10px; }
-
+        :root { --primary: #2c3e50; --secondary: #34495e; --accent: #3498db; --bg: #f8f9fa; --card: #ffffff; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.7; color: #333; max-width: 1000px; margin: 0 auto; padding: 40px; background-color: var(--bg); }
+        .container { background: var(--card); padding: 50px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+        header { text-align: center; border-bottom: 3px solid var(--primary); margin-bottom: 50px; padding-bottom: 20px; }
+        h1 { font-size: 2.4em; color: var(--primary); margin: 0; }
+        .team { font-size: 1.1em; color: var(--secondary); margin-top: 15px; font-weight: 600; }
+        h2 { color: var(--primary); border-left: 6px solid var(--accent); padding-left: 15px; margin-top: 50px; font-size: 1.8em; }
+        h3 { background: #eef2f7; padding: 12px 20px; border-radius: 8px; color: var(--secondary); margin-top: 40px; }
+        h4 { color: var(--accent); font-size: 1.3em; margin: 30px 0 10px 0; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        p { margin-bottom: 20px; text-align: justify; }
+        .img-container { text-align: center; margin: 30px 0; padding: 20px; background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; }
+        img { max-width: 100%; height: auto; border-radius: 5px; border: 1px solid #ddd; }
+        .caption { display: block; margin-top: 12px; font-size: 0.9em; color: #666; font-style: italic; }
+        .flex-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+        .flex-group img { max-width: 45%; }
+        iframe { width: 100%; height: 500px; border: 1px solid #ccc; margin: 20px 0; border-radius: 8px; }
+        footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid #eee; text-align: center; color: #999; }
         ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-
-        .reference-list { font-size: 0.9em; word-break: break-all; }
-
-        @media (max-width: 600px) {
-            body { padding: 20px 10px; }
-            h1 { font-size: 1.6em; }
-        }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
+<div class="container">
     <header>
         <h1>Predicting the Future of Latin and Greek Plurals</h1>
-        <div class="team-members">Team Members: 김태오, 서병호, 엄찬우, 주지현</div>
+        <p class="team">Team Members: 김태오, 서병호, 엄찬우, 주지현</p>
     </header>
 
-    <section class="content-section">
+    <section id="s1">
         <h2>1. Introduction</h2>
-        <p>Studying Latin and Greek plural forms in English is important because these ancient languages are the foundation of Western academic writing[cite: 5, 6]. Over 60% of English words come from Latin and Greek[cite: 7]. Since many English words—especially in science, medicine, technology, and law—come from these roots, knowing their plural rules helps us communicate more clearly in professional jobs[cite: 8].</p>
-        <p>In this report, our team looks at which nouns are changing to regular English plurals and which ones still use their old forms[cite: 9]. We want to explain why this happens by looking at how these words are used in different subjects and over long periods of time[cite: 10]. Finally, we will use our data to predict which plural forms will become the standard by the year 2040[cite: 11].</p>
+        <p>Studying Latin and Greek plural forms in English is important because these ancient languages are the foundation of Western academic writing. Over 60% of English words come from Latin and Greek. knowing their plural rules helps us communicate more clearly in professional jobs. In this report, our team looks at which nouns are changing to regular English plurals and which ones still use their old forms.</p>
     </section>
 
-    <section class="content-section">
-        <h2>2. Research Questions</h2>
-        <ul>
-            <li>Which nouns are shifting toward regularized English plurals (for example, -s or -es), and which retain their classical forms? [cite: 13]</li>
-            <li>Why does this difference occur? [cite: 14]</li>
-            <li>What patterns emerge when usage data is examined across registers, disciplines, and time periods? [cite: 15]</li>
-            <li>Which plural forms are most likely to be treated as standard by 2040? [cite: 16]</li>
-        </ul>
-    </section>
-
-    <section class="content-section">
+    <section id="s3">
         <h2>3. Corpus-Based Usage Analysis</h2>
-        <p>This section presents long-term usage patterns for Latin-derived plural nouns based on corpus data from Ngram and COCA[cite: 17, 18].</p>
-
-        <h3>A. General Retention</h3>
-        <p>Latin-derived plural forms are consistently maintained, particularly in specialized or academic contexts[cite: 20].</p>
         
-        <div class="analysis-block">
-            <h4>Funguses / Fungi</h4>
-            <p><strong>Fungi</strong> is used in biology and medicine, while <strong>funguses</strong> is rarely used in everyday contexts[cite: 23, 24].</p>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_fungus_ngram_Base64_데이터를_넣으세요" alt="fungus_ngram">
-                <div class="image-caption">Fungus Ngram Analysis [cite: 25]</div>
-            </div>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_fungus_coca_Base64_데이터를_넣으세요" alt="fungus_coca">
-                <div class="image-caption">Fungus COCA Analysis [cite: 28]</div>
-            </div>
+        <h3>A. General Retention</h3>
+        <h4>Funguses / Fungi</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:fungus_ngram.png]" alt="fungus_ngram">
+            <span class="caption">Figure: Ngram analysis of 'fungi' vs 'funguses'</span>
+        </div>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:fungus_coca.png]" alt="fungus_coca">
         </div>
 
-        <div class="analysis-block">
-            <h4>Cactuses / Cacti</h4>
-            <p><strong>Cacti</strong> is dominant in scientific and botanical contexts, while <strong>cactuses</strong> appears in more general conversational usage[cite: 33, 34, 39, 40].</p>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_cactus_ngram_Base64_데이터를_넣으세요" alt="cactus_ngram">
-                <div class="image-caption">Cactus Ngram Analysis [cite: 35]</div>
-            </div>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_cactus_coca_Base64_데이터를_넣으세요" alt="cactus_coca">
-                <div class="image-caption">Cactus COCA Analysis [cite: 38]</div>
-            </div>
+        <h4>Cactuses / Cacti</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:cactus_ngram.png]" alt="cactus_ngram">
+        </div>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:cactus_coca.png]" alt="cactus_coca">
+        </div>
+
+        <h4>Radiuses / Radii</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:radius_ngram.png]" alt="radius_ngram">
+        </div>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:radius_coca.png]" alt="radius_coca">
         </div>
 
         <h3>B. Non-Standard Forms</h3>
-        <div class="analysis-block">
-            <h4>Phenomenons / Phenomena</h4>
-            <p><strong>Phenomena</strong> is the standard plural across all contexts; <strong>phenomenons</strong> remains near zero acceptance[cite: 66, 69, 73].</p>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_phenomenon_ngram_Base64_데이터를_넣으세요" alt="phenomenon_ngram">
-                <div class="image-caption">Phenomenon Ngram Analysis [cite: 67]</div>
-            </div>
+        <h4>Phenomenons / Phenomena</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:phenomenon_ngram.png]" alt="phenomenon_ngram">
+        </div>
+        <div class="flex-group">
+            <img src="data:image/png;base64,[Base64:phenomenon_coca1.png]" alt="COCA1">
+            <img src="data:image/png;base64,[Base64:phenomenon_coca2.png]" alt="COCA2">
+            <img src="data:image/png;base64,[Base64:phenomenon_coca3.png]" alt="COCA3">
         </div>
 
         <h3>C. Everyday / Versatile Usage</h3>
-        <div class="analysis-block">
-            <h4>Formulas / Formulae</h4>
-            <p><strong>Formulas</strong> has become dominant in everyday and commercial contexts, while <strong>formulae</strong> is retained in technical research[cite: 99, 100, 102].</p>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_formula_ngram_Base64_데이터를_넣으세요" alt="formula_ngram">
-                <div class="image-caption">Formula Ngram Analysis [cite: 101]</div>
-            </div>
+        <h4>Formulas / Formulae</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:formula_ngram.png]" alt="formula_ngram">
+        </div>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:formula_coca.png]" alt="formula_coca">
+        </div>
+
+        <h4>Stadiums / Stadia</h4>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:stadium_ngram.png]" alt="stadium_ngram">
+        </div>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:stadium_coca.png]" alt="stadium_coca">
         </div>
 
         <h3>D. Contextual Distinction</h3>
-        <div class="analysis-block">
-            <h4>Antennas / Antennae</h4>
-            <p><strong>Antennas</strong> refers to electronic devices, while <strong>antennae</strong> refers to biological feelers[cite: 111, 112, 118].</p>
-            <div class="image-container">
-                <img src="data:image/png;base64,여기에_antenna_ngram_Base64_데이터를_넣으세요" alt="antenna_ngram">
-                <div class="image-caption">Antenna Ngram Analysis [cite: 113]</div>
-            </div>
+        <h4>Antennas / Antennae</h4>
+        <p>The English plural 'antennas' is used for technology, while 'antennae' is for biology.</p>
+        <div class="img-container">
+            <img src="data:image/png;base64,[Base64:antenna_ngram.png]" alt="antenna_ngram">
+        </div>
+        <div class="flex-group">
+            <img src="data:image/png;base64,[Base64:antenna_coca1.png]" alt="Antenna COCA1">
+            <img src="data:image/png;base64,[Base64:antenna_coca2.png]" alt="Antenna COCA2">
         </div>
     </section>
 
-    <section class="content-section">
-        <h2>4. Rate and Direction Comparison</h2>
-        <p>The rate of change varies; nouns like "phenomena" show almost no change, while "formulas" and "stadiums" shift rapidly toward English forms[cite: 147, 148]. Specialization and everyday usability are key factors in this variation[cite: 159, 166].</p>
+    <section id="s9">
+        <h2>9. References</h2>
+        <ul>
+            <li>Google Ngram Viewer: <a href="https://books.google.com/ngrams">Link</a></li>
+            <li>COCA: <a href="https://www.english-corpora.org/coca/">Link</a></li>
+        </ul>
+        <iframe src="https://books.google.com/ngrams/graph?content=stadiums%2Cstadia&year_start=1800&year_end=2019&corpus=en-2019&smoothing=3"></iframe>
     </section>
 
-    <section class="content-section">
-        <h2>5. 2040 Usage Projections</h2>
-        <p>By 2040, most nouns will likely shift toward regular English forms, except for specialized scientific terms like "phenomena" and "larvae" which will remain stable[cite: 178, 179, 185].</p>
-    </section>
-
-    <section class="content-section">
-        <h2>6. Recommendations</h2>
-        <p>Dictionaries should clearly label usage contexts, and education should prioritize English-style plurals as the default[cite: 187, 188].</p>
-    </section>
-
-    <section class="content-section">
-        <h2>7. Conclusion</h2>
-        <p>Plural usage is becoming regularized in most cases, but Latin forms are firmly retained in specialized academic and scientific fields to ensure precision[cite: 195].</p>
-    </section>
-
-    <section class="content-section">
-        <h2>8. References</h2>
-        <div class="reference-list">
-            <ol>
-                <li>Google Ngram Viewer: <a href="https://books.google.com/ngrams">https://books.google.com/ngrams</a> [cite: 197]</li>
-                <li>COCA: <a href="https://www.english-corpora.org/coca/">https://www.english-corpora.org/coca/</a> [cite: 198]</li>
-                <li>Cambridge Dictionary: <a href="https://dictionary.cambridge.org/">https://dictionary.cambridge.org/</a> [cite: 199]</li>
-                <li>Duke University, Classical Studies [cite: 200]</li>
-            </ol>
-        </div>
-    </section>
+    <footer>
+        <p>Created for Academic PBL Project - 2026</p>
+    </footer>
+</div>
 
 </body>
 </html>
